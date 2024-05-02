@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "price": "100",
+            "name": "Rice",
+            "description": "Sona masuri",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "2",
+            "price": "200",
+            "name": "Cashew",
+            "description": "High quality",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "3",
+            "price": "300",
+            "name": "Cotton",
+            "description": "For cloths",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "4",
+            "price": "400",
+            "name": "Almonds",
+            "description": "Medium quality",
+            "image": "https://picsum.photos/700"
+        }
+    ]
+}

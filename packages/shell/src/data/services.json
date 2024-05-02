@@ -1,0 +1,17 @@
+{
+    "data": [
+        {
+            "id": "booking",
+            "title": "Buy from Farmers"
+        },
+        {
+            "id": "shopping",
+            "title": "Sell to ofi"
+        },
+       
+        {
+            "id": "dashboard",
+            "title": "Negotiate"
+        }
+    ]
+}

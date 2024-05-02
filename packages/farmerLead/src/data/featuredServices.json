@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "type": "cachew",
+            "title": "Cachew",
+            "place": "Bangalore",
+            "address": "123 Main St",
+            "image": "https://picsum.photos/700?a"
+        },
+        {
+            "id": "2",
+            "type": "milk",
+            "title": "Milk",
+            "place": "Chennai",
+            "address": "456 Main St",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "3",
+            "type": "rice",
+            "title": "Rice",
+            "place": "Cochin",
+            "address": "789 Main St",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "4",
+            "type": "wheat",
+            "title": "Wheat",
+            "place": "Punjab",
+            "address": "123 Main St",
+            "image": "https://picsum.photos/700"
+        }
+    ]
+}

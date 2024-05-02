@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">host</string>
+    <string name="RepackPublicKey">
+-----BEGIN PUBLIC KEY-----
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA1/lhY5oWjq42xf9ZH5iQ
+pdzemWbciys90mms8ZgipTc5E4CTrVgZ6mV9zr6KsgOlkAhSC4QAQNfQYRMNTdOV
+CeyWPuj7a4cxS+g0p/47Gmfb//ap03e5tOl5KDByn33dsLdyPrQUccE0VQ0GIMyR
+5m4Fnuu8bReNrUlSVgq60YwUsZySEe3fLhaaaZHry1bFXlK1h4uTG6sfLqVZ576d
+2mkEs1GiaHqZWsq+u+JLzRCx/SPRh3whWFzcwmUx8dsbV+vohuDah1dsXHUcDHL+
+CSVsq6FVy7G4adxDAFetr1Afx+2cK18gcVvuNmF2zyQDbpfJLGcWSy1htaHvYbRb
+eOXlH7C0R2Nc9H6JIeeFl1WckLZrLdXxXzelPxkBloNLBFDIDG81SuWsrAK5LiXC
+CHCvTId+I0K8lm7qfqzr0YwR28tvWRZ9l1I7XTNPtre92x+FcRRgY4dgUMkBb155
+DzvncwFXXracB5p8cJQYxY4EyPbhMXNVnu7qEniBU6Bno1GueZAPd5yhwD/xYqbB
+EXOLyVSWvr9zvsMGhHjWibVo1qX5iMkg/Ughk0SnrILuq0HHfntAusgVTqYOD4nV
+++XvwxhAzI6VOvU6UhC0+viHmnS3RoyJspfUJ8OuniZgf8iQMMOEFY4M3cJoTvNa
+U0ghi/03AazcUZcBRyy6gl0CAwEAAQ==
+-----END PUBLIC KEY-----
+    </string>
+</resources>

@@ -1,0 +1,77 @@
+{
+  "farmerLead": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  },
+  "dashboard": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  },
+  "host": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      },
+      {
+        "name": "farmerLead",
+        "type": "internal",
+        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      },
+      {
+        "name": "dashboard",
+        "type": "internal",
+        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      },
+      {
+        "name": "farmer",
+        "type": "internal",
+        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1",
+        "farmerLead": "0.0.1",
+        "dashboard": "0.0.1",
+        "farmer": "0.0.1",
+        "news": "0.0.1"
+      }
+    }
+  },
+  "farmer": {
+    "sources": [
+      {
+        "name": "auth",
+        "type": "internal",
+        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+      }
+    ],
+    "versions": {
+      "0.0.1": {
+        "auth": "0.0.1"
+      }
+    }
+  }
+}

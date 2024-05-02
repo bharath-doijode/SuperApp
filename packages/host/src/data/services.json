@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": "farmerLead",
+            "title": "Buy from Farmers",
+            "description": "Purchase the commodities from Farmers",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "farmer",
+            "title": "Sell to ofi",
+            "description": "Sell the commodities to ofi",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "dashboard",
+            "title": "Negotiate",
+            "description": "Negotiate price with Farmers and Admin",
+            "image": "https://picsum.photos/700"
+        }
+    ]
+}
