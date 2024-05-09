@@ -4,7 +4,7 @@
       {
         "name": "auth",
         "type": "internal",
-        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+        "url": "https://github.com/bharath-doijode/SuperApp"
       }
     ],
     "versions": {
@@ -18,7 +18,7 @@
       {
         "name": "auth",
         "type": "internal",
-        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+        "url": "https://github.com/bharath-doijode/SuperApp"
       }
     ],
     "versions": {
@@ -32,22 +32,22 @@
       {
         "name": "auth",
         "type": "internal",
-        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+        "url": "https://github.com/bharath-doijode/SuperApp"
       },
       {
         "name": "farmerLead",
         "type": "internal",
-        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+        "url": "https://github.com/bharath-doijode/SuperApp"
       },
       {
         "name": "dashboard",
         "type": "internal",
-        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+        "url": "https://github.com/bharath-doijode/SuperApp"
       },
       {
         "name": "farmer",
         "type": "internal",
-        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+        "url": "https://github.com/bharath-doijode/SuperApp"
       }
     ],
     "versions": {
@@ -65,7 +65,7 @@
       {
         "name": "auth",
         "type": "internal",
-        "url": "https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC"
+        "url": "https://github.com/bharath-doijode/SuperApp"
       }
     ],
     "versions": {

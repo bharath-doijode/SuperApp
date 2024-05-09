@@ -1,6 +1,6 @@
 # OPA Super App SDK
 
-SDK for the [OPA Super App](https://digitalgit.olamnet.com/bharath-doijode/OPA-PoC).
+SDK for the [OPA Super App](https://github.com/bharath-doijode/SuperApp).
 
 Its purpose is three-fold:
 
