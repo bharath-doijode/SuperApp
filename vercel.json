@@ -1,5 +1,5 @@
 {
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm installlllll",
   "buildCommand": "pnpm node scripts/build.js && mkdir -p public && touch public/index.html",
   "outputDirectory": "public",
   "rewrites": [
