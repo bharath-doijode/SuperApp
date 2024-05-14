@@ -4,8 +4,8 @@
   "outputDirectory": "public",
   "rewrites": [
     {
-      "source": "/packages/(host|farmerLead|farmer|dashboard)",
-      "destination": "/packages/catalog-server/api/index.js"
+      "source": "/(host|farmerLead|farmer|dashboard)",
+      "destination": "api/index.js"
     }
   ],
   "github": {
