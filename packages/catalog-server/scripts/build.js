@@ -33,7 +33,6 @@ function createAppJSON(matrix) {
     for (const appName in matrix.versions[version]) {
       const appVersion = matrix.versions[version][appName];
       const appInfo = matrix.sources.find(source => source.name === appName);
-      console.log("appInfo >>>>BHARATH>>>>>> ", appInfo);
       if(appInfo){
         const iosBundleURL = `${appInfo.url}/releases/download/${appName}-ios@${appVersion}/[name][ext]`;
         const androidBundleURL = `${appInfo.url}/releases/download/${appName}-android@${appVersion}/[name][ext]`;
