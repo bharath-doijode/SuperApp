@@ -25,6 +25,7 @@ app.get('/host', (req, res) => {
 
 // Route for the root path ('/')
 app.get('/', (req, res) => {
+  console.log(`[CatalogServer] Server listening at port ${port} `);
   res.render('ackscreen'); // Render the index.ejs template
 });
 
