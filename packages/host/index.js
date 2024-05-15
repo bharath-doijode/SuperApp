@@ -12,7 +12,7 @@ import {version as appVersion} from './package.json';
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
   
   const containersURL = getContainersURL({
-    hostname: "https://super-app-sepia.vercel.app/",//process.env.SAS_CATALOG_SERVER_URL,
+    hostname: "https://opa-super-app.vercel.app",//process.env.SAS_CATALOG_SERVER_URL,
     version: appVersion,
     platform: Platform.OS,
     appName,

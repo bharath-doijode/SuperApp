@@ -1,5 +1,5 @@
 const getContainersURL = ({
-  hostname = "https://super-app-sepia.vercel.app/",//'http://localhost:3000',
+  hostname = "https://opa-super-app.vercel.app",//'http://localhost:3000',
   appName,
   version,
   platform,
