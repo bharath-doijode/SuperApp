@@ -1,4 +1,5 @@
 const express = require('express');
+const ejs = require('ejs');
 
 // if running on vercel, use generated .prod configs
 const env = process.env.VERCEL ? '.prod' : '.dev';
@@ -11,6 +12,9 @@ const dashboard = require('../data/dashboard' + suffix);
 
 const app = express();
 const port = process.env.PORT ?? 3000;
+
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
 app.get('/host', (req, res) => {
   const platform = req.query.platform;
