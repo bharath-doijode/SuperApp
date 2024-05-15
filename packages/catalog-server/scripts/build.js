@@ -34,11 +34,14 @@ function createAppJSON(matrix) {
       const appVersion = matrix.versions[version][appName];
       const appInfo = matrix.sources.find(source => source.name === appName);
       console.log("appInfo >>>>BHARATH>>>>>> ", appInfo);
-      const iosBundleURL = `${appInfo.url}/releases/download/${appName}-ios@${appVersion}/[name][ext]`;
-      const androidBundleURL = `${appInfo.url}/releases/download/${appName}-android@${appVersion}/[name][ext]`;
+      if(appInfo){
+        const iosBundleURL = `${appInfo.url}/releases/download/${appName}-ios@${appVersion}/[name][ext]`;
+        const androidBundleURL = `${appInfo.url}/releases/download/${appName}-android@${appVersion}/[name][ext]`;
 
-      result.ios[version][appName] = iosBundleURL;
-      result.android[version][appName] = androidBundleURL;
+        result.ios[version][appName] = iosBundleURL;
+        result.android[version][appName] = androidBundleURL;
+      }
+      
     }
   }
 
