@@ -32,7 +32,7 @@ jobs:
         run: npm i -g pnpm@8.9.2
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Create code-signing.pem
         env:
