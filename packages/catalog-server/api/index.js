@@ -19,6 +19,11 @@ app.get('/host', (req, res) => {
   res.send(host[platform][appVersion]);
 });
 
+// Route for the root path ('/')
+app.get('/', (req, res) => {
+  res.render('ackscreen'); // Render the index.ejs template
+});
+
 app.get('/farmerLead', (req, res) => {
   const platform = req.query.platform;
   const appVersion = req.query.appVersion;
