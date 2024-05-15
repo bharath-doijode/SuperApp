@@ -31,9 +31,6 @@ jobs:
       - name: Install PNPM
         run: npm i -g pnpm@8.9.2
 
-      - name: Remove package.lock.json
-        run: rm package-lock.json
-
       - name: Install dependencies
         run: pnpm install
 
