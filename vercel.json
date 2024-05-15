@@ -5,7 +5,7 @@
   "rewrites": [
     {
       "source": "/packages/(host|farmerLead|farmer|dashboard)",
-      "destination": "packages/catalog-server/api/index.js"
+      "destination": "api/index.js"
     }
   ],
   "github": {
