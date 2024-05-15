@@ -55,8 +55,7 @@
         "auth": "0.0.1",
         "farmerLead": "0.0.1",
         "dashboard": "0.0.1",
-        "farmer": "0.0.1",
-        "news": "0.0.1"
+        "farmer": "0.0.1"
       }
     }
   },
