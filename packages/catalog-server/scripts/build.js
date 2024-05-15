@@ -21,6 +21,7 @@ const fs = require('fs');
 const path = require('path');
 
 function createAppJSON(matrix) {
+  console.log("matrix >>>>BHARATH>>>>>> ", matrix);
   const result = {
     ios: {},
     android: {},
