@@ -18,8 +18,7 @@ app.set('views', __dirname + '/views');
 
 app.get('/host', (req, res) => {
   console.log("env >>> ", env);
-  console.log("req >>>>>>>>> ", req);
-  console.log("res >>>>>>>>> ", res);
+ 
   const platform = req.query.platform;
   const appVersion = req.query.appVersion;
 
@@ -29,16 +28,14 @@ app.get('/host', (req, res) => {
 // Route for the root path ('/')
 app.get('/', (req, res) => {
   console.log("env >>> ", env);
-  console.log("req >>>>>>>>> ", req);
-  console.log("res >>>>>>>>> ", res);
+
   console.log(`[CatalogServer] Server listening at port ${port} `);
   res.render('ackscreen'); // Render the index.ejs template
 });
 
 app.get('/farmerLead', (req, res) => {
   console.log("env >>> ", env);
-  console.log("req >>>>>>>>> ", req);
-  console.log("res >>>>>>>>> ", res);
+
   const platform = req.query.platform;
   const appVersion = req.query.appVersion;
 
@@ -47,8 +44,7 @@ app.get('/farmerLead', (req, res) => {
 
 app.get('/farmer', (req, res) => {
   console.log("env >>> ", env);
-  console.log("req >>>>>>>>> ", req);
-  console.log("res >>>>>>>>> ", res);
+ 
   const platform = req.query.platform;
   const appVersion = req.query.appVersion;
 
@@ -56,8 +52,7 @@ app.get('/farmer', (req, res) => {
 });
 
 app.get('/dashboard', (req, res) => {
-  console.log("req >>>>>>>>> ", req);
-  console.log("res >>>>>>>>> ", res);
+  
   const platform = req.query.platform;
   const appVersion = req.query.appVersion;
 
