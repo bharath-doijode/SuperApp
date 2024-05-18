@@ -6,8 +6,8 @@ const env = process.env.VERCEL ? '.prod' : '.dev';
 const suffix = env + '.json';
 
 const host = require('../data/host' + suffix);
-const booking = require('../data/booking' + suffix);
-const shopping = require('../data/shopping' + suffix);
+const farmer = require('../data/farmer' + suffix);
+const farmerLead = require('../data/farmerLead' + suffix);
 const dashboard = require('../data/dashboard' + suffix);
 
 const app = express();
@@ -17,6 +17,7 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
 app.get('/host', (req, res) => {
+  console.log("env >>> ", env);
   console.log("req >>>>>>>>> ", req);
   console.log("res >>>>>>>>> ", res);
   const platform = req.query.platform;
@@ -27,6 +28,7 @@ app.get('/host', (req, res) => {
 
 // Route for the root path ('/')
 app.get('/', (req, res) => {
+  console.log("env >>> ", env);
   console.log("req >>>>>>>>> ", req);
   console.log("res >>>>>>>>> ", res);
   console.log(`[CatalogServer] Server listening at port ${port} `);
@@ -34,6 +36,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/farmerLead', (req, res) => {
+  console.log("env >>> ", env);
   console.log("req >>>>>>>>> ", req);
   console.log("res >>>>>>>>> ", res);
   const platform = req.query.platform;
@@ -43,6 +46,7 @@ app.get('/farmerLead', (req, res) => {
 });
 
 app.get('/farmer', (req, res) => {
+  console.log("env >>> ", env);
   console.log("req >>>>>>>>> ", req);
   console.log("res >>>>>>>>> ", res);
   const platform = req.query.platform;
