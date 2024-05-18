@@ -7,6 +7,6 @@
   "android": {
     "0.0.1": {
       "auth": "http://localhost:9003/[name][ext]"
-    }
+     }
   }
 }
