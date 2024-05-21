@@ -1,11 +1,9 @@
 {
   "name": "host",
   "displayName": "host",
-  "expo": {
-    "extra": {
-      "eas": {
-        "projectId": "eac64bfd-608c-40cf-8825-0bd89aefc1d8"
-      }
+  "extra": {
+    "eas": {
+      "projectId": "eac64bfd-608c-40cf-8825-0bd89aefc1d8"
     }
   }
 }
