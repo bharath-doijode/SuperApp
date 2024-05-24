@@ -121,13 +121,19 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+//        release {
+//            if (project.hasProperty('SUPERAPPTEMPLATE_UPLOAD_STORE_FILE')) {
+//                storeFile file(SUPERAPPTEMPLATE_UPLOAD_STORE_FILE)
+//                storePassword SUPERAPPTEMPLATE_UPLOAD_STORE_PASSWORD
+//                keyAlias SUPERAPPTEMPLATE_UPLOAD_KEY_ALIAS
+//                keyPassword SUPERAPPTEMPLATE_UPLOAD_KEY_PASSWORD
+//            }
+//        }
         release {
-            if (project.hasProperty('SUPERAPPTEMPLATE_UPLOAD_STORE_FILE')) {
-                storeFile file(SUPERAPPTEMPLATE_UPLOAD_STORE_FILE)
-                storePassword SUPERAPPTEMPLATE_UPLOAD_STORE_PASSWORD
-                keyAlias SUPERAPPTEMPLATE_UPLOAD_KEY_ALIAS
-                keyPassword SUPERAPPTEMPLATE_UPLOAD_KEY_PASSWORD
-            }
+            storeFile file("OPA-Host-Keystore")
+            storePassword 'Olam@123'
+            keyAlias 'Key0'
+            keyPassword 'Olam@123'
         }
     }
     buildTypes {

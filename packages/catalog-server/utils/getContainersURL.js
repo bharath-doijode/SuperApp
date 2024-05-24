@@ -1,5 +1,5 @@
 const getContainersURL = ({
-  hostname = process.env.SAS_CATALOG_SERVER_URL,
+  hostname = "https://catalog-server-opa.vercel.app/",//process.env.SAS_CATALOG_SERVER_URL,
   appName,
   version,
   platform,

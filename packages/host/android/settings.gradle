@@ -1,4 +1,7 @@
-apply from: '../node_modules/opa-super-app-sdk/android/resolveNodePackage.gradle'
+
+apply from: file("../node_modules/opa-super-app-sdk/android/resolveNodePackage.gradle");
+
+//apply from: '../node_modules/opa-super-app-sdk/android/resolveNodePackage.gradle'
 
 rootProject.name = 'host'
 

@@ -12,7 +12,7 @@ import {version as appVersion} from './package.json';
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
   
   const containersURL = getContainersURL({
-    hostname: process.env.SAS_CATALOG_SERVER_URL,
+    hostname: "https://catalog-server-opa.vercel.app/",//process.env.SAS_CATALOG_SERVER_URL,
     version: appVersion,
     platform: Platform.OS,
     appName,
@@ -41,11 +41,11 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
 
   return {
     url,
-    cache: !__DEV__,
+    cache: true,//!__DEV__,
     query: {
       platform: Platform.OS, // only needed in development
     },
-    verifyScriptSignature: __DEV__ ? 'off' : 'strict',
+    verifyScriptSignature: 'off',//__DEV__ ? 'off' : 'strict',
   };
 });
 
