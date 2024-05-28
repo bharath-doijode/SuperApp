@@ -463,6 +463,9 @@ importers:
       '@react-native-async-storage/async-storage':
         specifier: 1.17.11
         version: 1.17.11(react-native@0.71.8)
+      '@react-native-community/netinfo':
+        specifier: ^11.3.2
+        version: 11.3.2(react-native@0.71.8)
       '@react-navigation/material-bottom-tabs':
         specifier: 6.2.5
         version: 6.2.5(@react-navigation/native@6.0.14)(react-native-paper@5.0.0-rc.10)(react-native-safe-area-context@4.4.1)(react-native-vector-icons@9.2.0)(react-native@0.71.8)(react@18.2.0)
@@ -3132,6 +3135,14 @@ packages:
       - supports-color
       - utf-8-validate
     dev: true
+
+  /@react-native-community/netinfo@11.3.2(react-native@0.71.8):
+    resolution: {integrity: sha512-YsaS3Dutnzqd1BEoeC+DEcuNJedYRkN6Ef3kftT5Sm8ExnCF94C/nl4laNxuvFli3+Jz8Df3jO25Jn8A9S0h4w==}
+    peerDependencies:
+      react-native: '>=0.59'
+    dependencies:
+      react-native: 0.71.8(@babel/core@7.24.5)(@babel/preset-env@7.24.5)(react@18.2.0)
+    dev: false
 
   /@react-native/assets@1.0.0:
     resolution: {integrity: sha512-KrwSpS1tKI70wuKl68DwJZYEvXktDHdZMG0k2AXD/rJVSlB23/X2CB2cutVR0HwNMJIal9HOUOBB2rVfa6UGtQ==}
