@@ -492,7 +492,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 4A8DX88CD3;
+				DEVELOPMENT_TEAM = WZ5NQJX9SX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = host/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = host;
@@ -528,7 +528,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 4A8DX88CD3;
+				DEVELOPMENT_TEAM = WZ5NQJX9SX;
 				INFOPLIST_FILE = host/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = host;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -24,92 +24,38 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
 
   const network = await getNetworkStatus();
 
-  let url;
-
-  if (network.isConnected) {
-
-    const containersResponse = await fetch(containersURL);
-
-    const containers = await containersResponse.json();
-
-    await AsyncStorage.setItem('cachedContainers', JSON.stringify(containers)); 
-
-    const resolveURL = Federated.createURLResolver({
-      containers,
-    });
-
-
-
-    if (__DEV__ && caller === 'main') {
-      url = Script.getDevServerURL(scriptId);
-    } else {
-      url = resolveURL(scriptId, caller);
-      
-    }
-
-    if (!url) {
-      return undefined;
-    }
-
-    // let returnObject = JSON.stringify({
-    //   url,
-    //   cache: true,
-    //   query: {
-    //     platform: Platform.OS, 
-    //   },
-    //   verifyScriptSignature: 'off'
-    // });
-
-    //await AsyncStorage.setItem('cachedData', returnObject); 
+  let url, containers;
   
-    return {
-      url,
-      cache: true,//!__DEV__,
-      query: {
-        platform: Platform.OS, // only needed in development
-      },
-      verifyScriptSignature: 'off',//__DEV__ ? 'off' : 'strict',
-    };
-
-
-
+  if (network.isConnected) {
+    const containersResponse = await fetch(containersURL);
+    containers = await containersResponse.json();
+  
+    await AsyncStorage.setItem('cachedContainers', JSON.stringify(containers));
+  } else {
+    const cachedContainersData = await AsyncStorage.getItem('cachedContainers');
+    containers = cachedContainersData ? JSON.parse(cachedContainersData) : null;
   }
-  else{
-   
-
-    let containersData = await AsyncStorage.getItem('cachedContainers'); 
-    let containers = JSON.parse(containersData);
-
-    const resolveURL = Federated.createURLResolver({
-      containers,
-    });
-
-
-
-    if (__DEV__ && caller === 'main') {
-      url = Script.getDevServerURL(scriptId);
-    } else {
-      url = resolveURL(scriptId, caller);
-      
-    }
-
-    if (!url) {
-      return undefined;
-    }
-
-    
-
-    return {
-      url,
-      cache: true,//!__DEV__,
-      query: {
-        platform: Platform.OS, // only needed in development
-      },
-      verifyScriptSignature: 'off',//__DEV__ ? 'off' : 'strict',
-    };
-
-
+  
+  const resolveURL = Federated.createURLResolver({ containers });
+  
+  if (__DEV__ && caller === 'main') {
+    url = Script.getDevServerURL(scriptId);
+  } else {
+    url = resolveURL(scriptId, caller);
   }
+  
+  if (!url) {
+    return undefined;
+  }
+  
+  return {
+    url,
+    cache: !__DEV__,
+    query: {
+      platform: Platform.OS, // only needed in development
+    },
+    verifyScriptSignature: __DEV__ ? 'off' : 'strict',
+  };
 
   
 });
