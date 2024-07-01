@@ -20,9 +20,7 @@ const SignInScreen = () => {
       <Button mode="contained" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }} onPress={()=>signIn("FL")}>
         Login as Farmer Lead
       </Button>
-      <Button mode="contained" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }}  onPress={()=>signIn("SU")}>
-        Login as Super User
-      </Button>
+     
     </View>
   );
 };

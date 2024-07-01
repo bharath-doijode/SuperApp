@@ -24,8 +24,8 @@ const MainNavigator = (props: any) => {
         headerShown: false,
       }}>
       <Main.Screen name="Tabs" component={TabsNavigator} initialParams={{role: role}}/>
-      <Main.Screen name="FarmerLead" component={FarmerLeadScreen} />
-      <Main.Screen name="Farmer" component={FarmerScreen} />
+      {role && role === "FL" && <Main.Screen name="FarmerLead" component={FarmerLeadScreen} />}
+      {role && role === "FR" && <Main.Screen name="Farmer" component={FarmerScreen} /> }
       <Main.Screen name="Dashboard" component={DashboardScreen} />
     </Main.Navigator>
   );
