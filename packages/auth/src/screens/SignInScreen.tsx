@@ -18,6 +18,7 @@ const SignInScreen = () => {
       <TextInput
         style={styles.input}
         placeholder="Email"
+        placeholderTextColor={'black'}
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
@@ -26,6 +27,7 @@ const SignInScreen = () => {
       <TextInput
         style={styles.input}
         placeholder="Password"
+        placeholderTextColor={'black'}
         value={password}
         onChangeText={setPassword}
         secureTextEntry
@@ -51,13 +53,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
+    backgroundColor: '#FFF'
   },
   title: {
     fontSize: 32,
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center',
-    minWidth: '80%'
+    minWidth: '80%',
+    color: 'gold'
   },
   input: {
     height: 40,
@@ -65,7 +69,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 20,
     paddingHorizontal: 10,
-    minWidth: '80%'
+    minWidth: '80%',
+    color: '#000'
   },
   image: {
     width: 100, 
