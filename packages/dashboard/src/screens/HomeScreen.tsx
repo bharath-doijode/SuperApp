@@ -30,7 +30,7 @@ const renderUpcoming = ({item}: any) => (
       subtitleVariant="bodyMedium"
       title={`${item.title} • ${item.provider}`}
       subtitle={`${item.date} ${item.time}`}
-      left={props => <Avatar.Icon {...props} icon="calendar" />}
+      // left={props => <Avatar.Icon {...props} icon="calendar" />}
     />
     <Card.Actions>
       <Button mode="text" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }} onPress={showNotImplementedAlert}>
@@ -45,7 +45,7 @@ const renderUpcoming = ({item}: any) => (
 
 const renderProduct: ListRenderItem<any> = ({item, index}) => (
   <Card mode="contained" style={styles.cardWidth}>
-    <Card.Cover source={{uri: `${item.image}?${index}`}} />
+    {/* <Card.Cover source={{uri: `${item.image}?${index}`}} /> */}
     <Card.Content>
       <Title>{`${item.name} • $${item.price}`}</Title>
       <Paragraph numberOfLines={1}>{item.description}</Paragraph>
@@ -59,7 +59,7 @@ const renderProduct: ListRenderItem<any> = ({item, index}) => (
 
 const renderArticle: ListRenderItem<any> = ({item, index}) => (
   <Card mode="contained" style={styles.cardWidth}>
-    <Card.Cover source={{uri: `${item.image}?${index}`}} />
+    {/* <Card.Cover source={{uri: `${item.image}?${index}`}} /> */}
     <Card.Content>
       <Title>{item.title}</Title>
       <Paragraph numberOfLines={3}>{item.content}</Paragraph>
@@ -94,7 +94,7 @@ const HomeScreen = () => {
       />
       <View style={styles.header}>
         <Text variant="titleLarge" style={styles.headerTitle}>
-          My Products
+           Products
         </Text>
         <Button mode="contained-tonal" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }} onPress={showNotImplementedAlert}>
           Manage
@@ -110,7 +110,7 @@ const HomeScreen = () => {
       />
       <View style={styles.header}>
         <Text variant="titleLarge" style={styles.headerTitle}>
-          My News
+           News
         </Text>
         <Button mode="contained-tonal" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }} onPress={showNotImplementedAlert}>
           Manage
@@ -126,7 +126,7 @@ const HomeScreen = () => {
       />
       <View style={styles.header}>
         <Text variant="titleLarge" style={styles.headerTitle}>
-          My Articles
+          Farmers Articles
         </Text>
         <Button mode="contained-tonal" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }} onPress={showNotImplementedAlert}>
           Manage

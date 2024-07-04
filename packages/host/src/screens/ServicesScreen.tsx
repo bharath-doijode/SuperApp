@@ -33,10 +33,10 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
 
   // const openNews = useCallback(() => navigation.navigate('News'), [navigation]);
 
-  const openFarmer = useCallback(
-    () => navigation.navigate('Farmer'),
-    [navigation],
-  );
+  // const openFarmer = useCallback(
+  //   () => navigation.navigate('Farmer'),
+  //   [navigation],
+  // );
 
   const openDashboard = useCallback(
     () => navigation.navigate('Dashboard'),
@@ -48,7 +48,7 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
       const lastItem = index === services.data.length - 1;
       const map = new Map([
         ['farmerLead', openFarmerLead],
-        ['farmer', openFarmer],
+        // ['farmer', openFarmer],
         ['dashboard', openDashboard],
       ]);
 
@@ -58,7 +58,7 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
       return (
         <View style={[styles.serviceItem, lastItem && styles.lastServiceItem]}>
           <Card mode="contained" onPress={onPress} style={styles.cardItem}>
-            <Card.Cover source={{uri: `${item.image}?${index}`}} />
+            {/* <Card.Cover source={{uri: `${item.image}?${index}`}} /> */}
             <Card.Content>
               <Title numberOfLines={1}>{item.title}</Title>
               <Paragraph numberOfLines={1}>{item.description}</Paragraph>
@@ -67,7 +67,7 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
         </View>
       );
     },
-    [openFarmerLead, openDashboard, openFarmer],
+    [openFarmerLead, openDashboard/*, openFarmer */],
   );
 
   return (

@@ -37,7 +37,7 @@ const renderUpcoming = ({item}: any) => (
       subtitleVariant="bodyMedium"
       title={`${item.title} • ${item.provider}`}
       subtitle={`${item.date} ${item.time}`}
-      left={props => <Avatar.Icon {...props} icon="calendar" />}
+      // left={props => <Avatar.Icon {...props} icon="calendar" />}
     />
     <Card.Actions>
       <Button mode="text" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }} onPress={() => {}}>
@@ -66,7 +66,7 @@ const renderProduct: ListRenderItem<any> = ({item, index}) => (
 
 const renderArticle: ListRenderItem<any> = ({item, index}) => (
   <Card mode="contained" style={styles.cardWidth}>
-    <Card.Cover source={{uri: `${item.image}?${index}`}} />
+    {/* <Card.Cover source={{uri: `${item.image}?${index}`}} /> */}
     <Card.Content>
       <Title>{item.title}</Title>
       <Paragraph numberOfLines={3}>{item.content}</Paragraph>
@@ -81,7 +81,7 @@ const HomeScreen = ({navigation}: Props) => {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Text variant="titleLarge" style={styles.headerTitle}>
-          Commodities Lists
+          Commodities List
         </Text>
         <Button
         style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }}
@@ -116,7 +116,7 @@ const HomeScreen = ({navigation}: Props) => {
       />
       <View style={styles.header}>
         <Text variant="titleLarge" style={styles.headerTitle}>
-          Recent Articles
+          Farmer News
         </Text>
         <Button mode="contained-tonal" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }} onPress={() => {}}>
           See All

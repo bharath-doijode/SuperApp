@@ -10,7 +10,7 @@ const renderItem = ({item}: any) => (
       subtitleVariant="bodyMedium"
       title={`${item.title} • ${item.provider}`}
       subtitle={`${item.date} ${item.time}`}
-      left={props => <Avatar.Icon {...props} icon="calendar" />}
+      // left={props => <Avatar.Icon {...props} icon="calendar" />}
     />
     <Card.Actions>
       <Button mode="text" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }} onPress={() => {}}>

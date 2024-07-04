@@ -29,7 +29,7 @@ const renderAppointment = ({item}: any) => (
       subtitleVariant="bodyMedium"
       title={`${item.title} • ${item.provider}`}
       subtitle={`${item.date} ${item.time}`}
-      left={props => <Avatar.Icon {...props} icon="calendar" />}
+      // left={props => <Avatar.Icon {...props} icon="calendar" />}
     />
     <Card.Actions>
       <Button mode="text" style={{ borderRadius: 1 }}  theme={{ colors: { primary: 'brown' } }} onPress={() => {}}>
@@ -44,7 +44,7 @@ const renderAppointment = ({item}: any) => (
 
 const renderService: ListRenderItem<any> = ({item, index}) => (
   <Card mode="contained">
-    <Card.Cover source={{uri: `${item.image}?${index}`}} />
+    {/* <Card.Cover source={{uri: `${item.image}?${index}`}} /> */}
     <Card.Title
       titleVariant="titleMedium"
       subtitleVariant="bodyMedium"
@@ -61,7 +61,7 @@ const HomeScreen = ({navigation}: Props) => {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Text variant="titleLarge" style={styles.headerTitle}>
-          Featured Services
+          Farmers List
         </Text>
         <Button
           mode="contained-tonal"

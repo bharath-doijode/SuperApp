@@ -20,7 +20,7 @@ const TabsNavigator = () => {
         name="HomeNavigator"
         component={HomeNavigator}
         options={{
-          title: 'Module 1',
+          title: 'Home',
           tabBarIcon: 'home',
         }}
       />
@@ -28,7 +28,7 @@ const TabsNavigator = () => {
         name="CalendarNavigator"
         component={CalendarNavigator}
         options={{
-          title: 'Module 2',
+          title: 'Schedule',
           tabBarIcon: 'calendar',
         }}
       />
