@@ -11,7 +11,7 @@ import {version as appVersion} from './package.json';
 
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
   const containersURL = getContainersURL({
-    hostname: "https://catalog-server-opa.vercel.app/",//process.env.SAS_CATALOG_SERVER_URL,
+    hostname: "http://localhost:3000",//process.env.SAS_CATALOG_SERVER_URL,
     version: appVersion,
     platform: Platform.OS,
     appName: 'host', // for testing purposes

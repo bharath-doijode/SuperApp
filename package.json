@@ -21,8 +21,6 @@
     "run:dashboard:android": "pnpm --filter dashboard android",
     "bundle:auth:ios": "pnpm --filter auth bundle:ios",
     "bundle:auth:android": "pnpm --filter auth bundle:android",
-    "bundle:host:ios": "pnpm --filter host bundle:ios",
-    "bundle:host:android": "pnpm --filter host bundle:android",
     "pods": "pnpm -r pods",
     "pods:update": "pnpm -r pods:update",
     "start": "concurrently --raw -P 'pnpm:start:*(!standalone) {1}'",

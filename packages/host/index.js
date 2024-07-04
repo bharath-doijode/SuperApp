@@ -16,7 +16,7 @@ ScriptManager.shared.setStorage(AsyncStorage);
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
 
   const containersURL = getContainersURL({
-    hostname: "https://catalog-server-opa.vercel.app/",//"http://localhost:3000",//"https://catalog-server-opa.vercel.app/",//process.env.SAS_CATALOG_SERVER_URL,
+    hostname: "http://localhost:3000",//"https://catalog-server-opa.vercel.app/",//process.env.SAS_CATALOG_SERVER_URL,
     version: appVersion,
     platform: Platform.OS,
     appName,
@@ -25,11 +25,11 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
   const network = await getNetworkStatus();
 
   let url, containers;
-  
   if (network.isConnected) {
     const containersResponse = await fetch(containersURL);
+    console.log("containers >>>>> ", containers);
     containers = await containersResponse.json();
-  
+    console.log("containers >>>>> ", containers);
     await AsyncStorage.setItem('cachedContainers', JSON.stringify(containers));
   } else {
     const cachedContainersData = await AsyncStorage.getItem('cachedContainers');
@@ -37,6 +37,8 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
   }
   
   const resolveURL = Federated.createURLResolver({ containers });
+
+  
   
   if (__DEV__ && caller === 'main') {
     url = Script.getDevServerURL(scriptId);

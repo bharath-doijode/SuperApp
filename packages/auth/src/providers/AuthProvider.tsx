@@ -60,13 +60,13 @@ const AuthProvider = ({
   const authContext = React.useMemo(
     () => ({
       signIn: async (role: string) => {
+        // call the keycloak to authenticate and set the token and user role based on the logged in user
         try {
           await AuthService.shared.setUserRole(role);
           await AuthService.shared.setCredentials('dummy-auth-token');
         } catch (e) {
           // Handle error
         }
-
         dispatch({type: ActionTypes.SIGN_IN, payload: role});
       },
       signOut: async () => {
