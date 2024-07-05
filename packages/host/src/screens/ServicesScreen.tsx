@@ -56,8 +56,8 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
         map.get(item.id) ?? (() => Alert.alert('Not implemented yet'));
 
       return (
-        <View style={[styles.serviceItem, lastItem && styles.lastServiceItem]}>
-          <Card mode="contained" onPress={onPress} style={styles.cardItem}>
+        <View style={[styles.serviceItem]}>
+          <Card mode="elevated" onPress={onPress} style={styles.cardItem}>
             {/* <Card.Cover source={{uri: `${item.image}?${index}`}} /> */}
             <Card.Content>
               <Title numberOfLines={1}>{item.title}</Title>
@@ -72,7 +72,6 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
 
   return (
     <FlatList
-      numColumns={2}
       data={services.data}
       renderItem={renderItem}
       contentContainerStyle={styles.contentContainer}
@@ -94,6 +93,7 @@ const styles = StyleSheet.create({
   },
   cardItem: {
     flex: 1,
+    width: '100%'
   },
 });
 
