@@ -2,10 +2,22 @@
   "ios": {
     "0.0.1": {
       "auth": "http://localhost:9003/[name][ext]"
+    },
+    "0.0.2": {
+      "auth": "http://localhost:9003/[name][ext]"
+    },
+    "0.0.3": {
+      "auth": "http://localhost:9003/[name][ext]"
     }
   },
   "android": {
     "0.0.1": {
+      "auth": "http://localhost:9003/[name][ext]"
+     },
+     "0.0.2": {
+      "auth": "http://localhost:9003/[name][ext]"
+     },
+     "0.0.3": {
       "auth": "http://localhost:9003/[name][ext]"
      }
   }
