@@ -17,7 +17,7 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
 
   const containersURL = getContainersURL({
     hostname: "https://catalog-server-opa.vercel.app/",//"http://localhost:3000",//"https://catalog-server-opa.vercel.app/",//process.env.SAS_CATALOG_SERVER_URL,
-    version: appVersion,
+    version: "0.0.3", //appVersion
     platform: Platform.OS,
     appName,
   });
@@ -30,6 +30,7 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
     console.log("containers >>>>> ", containers);
     containers = await containersResponse.json();
     console.log("containers >>>>> ", containers);
+    console.log("appVersion >>>>>> ", appVersion);
     await AsyncStorage.setItem('cachedContainers', JSON.stringify(containers));
   } else {
     const cachedContainersData = await AsyncStorage.getItem('cachedContainers');
