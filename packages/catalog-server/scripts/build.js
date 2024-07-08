@@ -51,7 +51,6 @@ const data = fs.readFileSync(
   path.join(__dirname, '..', '..', '..', 'compatibility-matrix.json'),
   'utf8',
 );
-
 // parse JSON data
 const matrix = JSON.parse(data);
 

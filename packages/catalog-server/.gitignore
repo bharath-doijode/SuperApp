@@ -3,5 +3,5 @@
 node_modules/
 
 # prod data
-#data/*.prod.json
+data/*.prod.json
 .vercel
