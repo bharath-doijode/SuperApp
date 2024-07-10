@@ -3,8 +3,8 @@
     "sources": [
       {
         "name": "auth",
-        "type": "external",
-        "url": "https://github.com/bharath-doijode/farmerLead"
+        "type": "internal",
+        "url": "https://github.com/bharath-doijode/SuperApp"
       }
     ],
     "versions": {
