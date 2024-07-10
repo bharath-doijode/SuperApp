@@ -3,8 +3,8 @@
     "sources": [
       {
         "name": "auth",
-        "type": "internal",
-        "url": "https://github.com/bharath-doijode/SuperApp"
+        "type": "external",
+        "url": "https://github.com/bharath-doijode/farmerLead"
       }
     ],
     "versions": {
@@ -48,8 +48,8 @@
       },
       {
         "name": "farmerLead",
-        "type": "internal",
-        "url": "https://github.com/bharath-doijode/SuperApp"
+        "type": "external",
+        "url": "https://github.com/bharath-doijode/farmerLead"
       },
       {
         "name": "dashboard",
@@ -70,7 +70,10 @@
         "farmer": "0.0.1"
       },
       "1.0.0": {
-        "auth": "1.0.0"
+        "auth": "1.0.0",
+        "farmerLead": "0.0.1",
+        "dashboard": "0.0.1",
+        "farmer": "0.0.1"
       },
       "0.0.2": {
         "auth": "0.0.2",

@@ -6,7 +6,6 @@
   "packageManager": "pnpm@8.9.2",
   "scripts": {
     "start:host": "pnpm --filter host start",
-    "start:farmerLead": "pnpm --filter farmerLead start",
     "start:farmer": "pnpm --filter farmer start",
     "start:dashboard": "pnpm --filter dashboard start",
     "start:auth": "pnpm --filter auth start",
@@ -27,7 +26,7 @@
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
     "test": "pnpm -r test",
-    "adbreverse": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8090 tcp:8090 && adb reverse tcp:9000 tcp:9000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:9002 tcp:9002 && adb reverse tcp:9003 tcp:9003",
+    "adbreverse": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8090 tcp:8090 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:9002 tcp:9002 && adb reverse tcp:9003 tcp:9003",
     "align-deps": "pnpm -r align-deps",
     "check-deps": "pnpm -r check-deps"
   },
