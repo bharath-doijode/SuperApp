@@ -16,7 +16,7 @@ ScriptManager.shared.setStorage(AsyncStorage);
 ScriptManager.shared.addResolver(async (scriptId, caller) => {
 
   const containersURL = getContainersURL({
-    hostname: "http://localhost:3000",//"https://catalog-server-opa.vercel.app/",//process.env.SAS_CATALOG_SERVER_URL,
+    hostname: "https://catalog-server-opa.vercel.app/",//"http://localhost:3000",//"https://catalog-server-opa.vercel.app/",//process.env.SAS_CATALOG_SERVER_URL,
     version: appVersion,
     platform: Platform.OS,
     appName,
