@@ -20,6 +20,12 @@
       "farmerLead": "https://github.com/bharath-doijode/SuperApp/releases/download/farmerLead-ios@0.0.7/[name][ext]",
       "dashboard": "https://github.com/bharath-doijode/SuperApp/releases/download/dashboard-ios@0.0.3/[name][ext]",
       "farmer": "https://github.com/bharath-doijode/SuperApp/releases/download/farmer-ios@0.0.3/[name][ext]"
+    },
+    "0.0.4": {
+      "auth": "https://github.com/bharath-doijode/SuperApp/releases/download/auth-ios@0.0.3/[name][ext]",
+      "farmerLead": "https://github.com/bharath-doijode/SuperApp/releases/download/farmerLead-ios@0.0.7/[name][ext]",
+      "dashboard": "https://github.com/bharath-doijode/SuperApp/releases/download/dashboard-ios@0.0.3/[name][ext]",
+      "farmer": "https://github.com/bharath-doijode/SuperApp/releases/download/farmer-ios@0.0.3/[name][ext]"
     }
   },
   "android": {
@@ -39,6 +45,12 @@
       "farmer": "https://github.com/bharath-doijode/SuperApp/releases/download/farmer-android@0.0.2/[name][ext]"
     },
     "0.0.3": {
+      "auth": "https://github.com/bharath-doijode/SuperApp/releases/download/auth-android@0.0.3/[name][ext]",
+      "farmerLead": "https://github.com/bharath-doijode/SuperApp/releases/download/farmerLead-android@0.0.7/[name][ext]",
+      "dashboard": "https://github.com/bharath-doijode/SuperApp/releases/download/dashboard-android@0.0.3/[name][ext]",
+      "farmer": "https://github.com/bharath-doijode/SuperApp/releases/download/farmer-android@0.0.3/[name][ext]"
+    },
+    "0.0.4": {
       "auth": "https://github.com/bharath-doijode/SuperApp/releases/download/auth-android@0.0.3/[name][ext]",
       "farmerLead": "https://github.com/bharath-doijode/SuperApp/releases/download/farmerLead-android@0.0.7/[name][ext]",
       "dashboard": "https://github.com/bharath-doijode/SuperApp/releases/download/dashboard-android@0.0.3/[name][ext]",
