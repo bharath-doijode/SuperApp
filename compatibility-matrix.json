@@ -98,6 +98,12 @@
         "farmerLead": "0.0.7",
         "dashboard": "0.0.3",
         "farmer": "0.0.3"
+      },
+      "0.0.5": {
+        "auth": "0.0.3",
+        "farmerLead": "0.0.7",
+        "dashboard": "0.0.3",
+        "farmer": "0.0.3"
       }
     }
   },

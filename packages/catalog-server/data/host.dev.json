@@ -49,6 +49,12 @@
       "farmer": "http://localhost:9001/[name][ext]",
       "dashboard": "http://localhost:9002/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
+    },
+    "0.0.5": {
+      "farmerLead": "http://localhost:9004/[name][ext]",
+      "farmer": "http://localhost:9001/[name][ext]",
+      "dashboard": "http://localhost:9002/[name][ext]",
+      "auth": "http://localhost:9003/[name][ext]"
     }
   }
 }
