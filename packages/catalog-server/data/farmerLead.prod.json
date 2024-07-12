@@ -8,6 +8,9 @@
     },
     "0.0.3": {
       "auth": "https://github.com/bharath-doijode/SuperApp/releases/download/auth-ios@0.0.3/[name][ext]"
+    },
+    "0.0.7": {
+      "auth": "https://github.com/bharath-doijode/SuperApp/releases/download/auth-ios@0.0.3/[name][ext]"
     }
   },
   "android": {
@@ -18,6 +21,9 @@
       "auth": "https://github.com/bharath-doijode/SuperApp/releases/download/auth-android@0.0.2/[name][ext]"
     },
     "0.0.3": {
+      "auth": "https://github.com/bharath-doijode/SuperApp/releases/download/auth-android@0.0.3/[name][ext]"
+    },
+    "0.0.7": {
       "auth": "https://github.com/bharath-doijode/SuperApp/releases/download/auth-android@0.0.3/[name][ext]"
     }
   }
