@@ -7,7 +7,6 @@ directories=(
   "packages/auth"
   "packages/farmer"
   "packages/dashboard"
-  "packages/farmerLead"
 )
 
 # For each directory

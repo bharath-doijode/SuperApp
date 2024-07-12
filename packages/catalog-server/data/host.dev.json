@@ -1,19 +1,19 @@
 {
   "ios": {
     "0.0.1": {
-      "farmerLead": "http://localhost:9000/[name][ext]",
+      "farmerLead": "http://localhost:9004/[name][ext]",
       "farmer": "http://localhost:9001/[name][ext]",
       "dashboard": "http://localhost:9002/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
     },
     "0.0.2": {
-      "farmerLead": "http://localhost:9000/[name][ext]",
+      "farmerLead": "http://localhost:9004/[name][ext]",
       "farmer": "http://localhost:9001/[name][ext]",
       "dashboard": "http://localhost:9002/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
     },
     "0.0.3": {
-      "farmerLead": "http://localhost:9000/[name][ext]",
+      "farmerLead": "http://localhost:9004/[name][ext]",
       "farmer": "http://localhost:9001/[name][ext]",
       "dashboard": "http://localhost:9002/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
@@ -21,19 +21,19 @@
   },
   "android": {
     "0.0.1": {
-      "farmerLead": "http://localhost:9000/[name][ext]",
+      "farmerLead": "http://localhost:9004/[name][ext]",
       "farmer": "http://localhost:9001/[name][ext]",
       "dashboard": "http://localhost:9002/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
     },
     "0.0.2": {
-      "farmerLead": "http://localhost:9000/[name][ext]",
+      "farmerLead": "http://localhost:9004/[name][ext]",
       "farmer": "http://localhost:9001/[name][ext]",
       "dashboard": "http://localhost:9002/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
     },
     "0.0.3": {
-      "farmerLead": "http://localhost:9000/[name][ext]",
+      "farmerLead": "http://localhost:9004/[name][ext]",
       "farmer": "http://localhost:9001/[name][ext]",
       "dashboard": "http://localhost:9002/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"

@@ -65,8 +65,8 @@
     },
     {
       "name": "farmerLead",
-      "type": "internal",
-      "url": "https://github.com/bharath-doijode/SuperApp"
+      "type": "external",
+      "url": "https://github.com/bharath-doijode/farmerLead"
     },
     {
       "name": "dashboard",
